@@ -1,6 +1,6 @@
 # Ascolorii
 
-A tiny generic colorscript strongly inspired by @roberoonska's dotfiles
+A tiny generic colorscript strongly inspired by @roberoonska's [dotfiles](https://github.com/roberoonska/dotfiles).
 
 ## How to use it
 
