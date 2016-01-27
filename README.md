@@ -12,7 +12,7 @@ Get repository:
 
     git clone https://github.com/aloisdg/Ascolorii.git
 	
-Run the script with a path to a 11x6 ascii art file:
+Run the script with a path to a 6 columns (or less) ascii art file:
 
     ./ascolorii ascii/hello.txt
 
