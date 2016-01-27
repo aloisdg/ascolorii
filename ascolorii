@@ -14,6 +14,8 @@ function join {
     printf -v "$value" "%s" "$output${*/#/$separator}"
 }
 
+
+
 f=3 b=4
 for j in f b; do
   for i in {0..7}; do
@@ -24,6 +26,12 @@ bld=$'\e[1m'
 rst=$'\e[0m'
 #inv=$'\e[7m'
 #w=$'\e[37m'
+
+if [[ $# -ne 1 ]]; then
+    echo "Illegal number of parameters"
+    echo "Usage: $0 /path/to/file"
+    exit 0
+fi
 
 readarray -t pattern < "$1"
 
