@@ -2,6 +2,10 @@
 
 A tiny generic colorscript strongly inspired by @roberoonska's [dotfiles](https://github.com/roberoonska/dotfiles).
 
+## Demo
+
+[![ascolorii demo](http://i.imgur.com/PNvmuH2.jpg)](https://youtu.be/T6VhZOhdW8s)
+
 ## How to use it
 
 Get repository:
