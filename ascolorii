@@ -1,0 +1,48 @@
+#!/bin/bash
+#
+# ANSI color scheme script by pfh
+#
+# Initializing mod by lolilolicon from Archlinux
+#
+
+# http://www.shellcheck.net/
+
+# http://stackoverflow.com/a/17841619
+function join {
+    local value=$1 separator=$2 output=$3
+    shift 3 || shift $(($#))
+    printf -v "$value" "%s" "$output${*/#/$separator}"
+}
+
+f=3 b=4
+for j in f b; do
+  for i in {0..7}; do
+    printf -v $j$i %b "\e[${!j}${i}m"
+  done
+done
+bld=$'\e[1m'
+rst=$'\e[0m'
+#inv=$'\e[7m'
+#w=$'\e[37m'
+
+readarray -t pattern < "$1"
+
+colors=( $f1 $f2 $f3 $f4 $f5 $f6 )
+lines=()
+for i in {0..5}
+do
+  join lines[$i] "${pattern[$i]}" "${colors[@]}"
+  lines[$i]="${lines[$i]} ${pattern[$i]}"
+done
+
+# ok here I dont know how to use \n in bash
+# so ... http://unix.stackexchange.com/a/20042
+join line '
+' "${lines[@]}"
+
+cat << EOF
+
+$line$bld
+$line$rst
+
+EOF
