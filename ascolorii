@@ -5,16 +5,12 @@
 # Initializing mod by lolilolicon from Archlinux
 #
 
-# http://www.shellcheck.net/
-
 # http://stackoverflow.com/a/17841619
 function join {
     local value=$1 separator=$2 output=$3
     shift 3 || shift $(($#))
     printf -v "$value" "%s" "$output${*/#/$separator}"
 }
-
-
 
 f=3 b=4
 for j in f b; do
