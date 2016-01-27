@@ -16,7 +16,7 @@ Run the script with a path to a 11x6 ascii art file:
 
     ./ascolorii ascii/hello.txt
 
-Enjoy !
+Enjoy!
 
 ## Create Ascii Art
 
@@ -29,3 +29,14 @@ If you made or found a good one I would love to add it to the repository. Feel f
 
 I made this for fun after seeing this @roberoonska's [post](https://redd.it/42pgv7) on [/r/unixporn](https://www.reddit.com/r/unixporn/).
 I am an early bash user. This script mays contain a lot of mistake/error/whatever. If you find one, you can open an issue.
+
+## Changelog
+
+### v0.2.0
+
+- Support Nx6 ascii art file (by @roberoonska)
+
+### v0.1.0
+
+- Support 12x6 ascii art file
+- Add basic argument support
