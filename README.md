@@ -40,3 +40,9 @@ I am an early bash user. This script mays contain a lot of mistake/error/whateve
 
 - Support 12x6 ascii art file
 - Add basic argument support
+
+
+## You should like
+
+- [Color-Scripts](https://github.com/gstk/Color-Scripts) - User contributed color scripts  (by @gstk)
+- [Pipeseroni](https://github.com/pipeseroni) - A organization around pipe.sh (by @Foggalong)
